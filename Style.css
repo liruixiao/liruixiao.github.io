@@ -1,0 +1,94 @@
+@charset "utf-8";
+html{ font-size:12px;}
+/*============================Common====================================*/
+body,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,input,button,textarea,img{ margin:0; padding:0; -webkit-tap-hightlight-color:rgba(0,0,0,0); font-family:"Microsoft YaHei",Tahoma,Arial,"Roboto","Droid Sans","Helvetica Neue","Droid Sans Fallback","STHeiti",sans-serif; font-size:12px; color:#222;}/*清除默认外边距内间距+ 取消链接高亮*/
+*:focus{ outline:none;}/*Delete frame*/
+li{ list-style:none;}/*Delete circle point*/
+body{ min-width:960px;}
+/*font style*/
+h1,h2,h3,h4,h5,h6,b,strong{ font-size:100%; font-weight:Normal;}/*Cancel bold*/
+em,i{ font-style:normal;}/*Cancel Itlic*/
+p{ text-align:justify; text-justify:inter-word; }/*paragraph alignment*/
+/*Frame*/
+img,input{ border:none;}
+/*Link*/
+a,.con_4 h3 input,.con_1 ul li b,.con_2 ul li b,.con_4 p{ -webkit-transition:all ease-in-out .3s; -moz-transition:all ease-in-out .3s; -o-transition:all ease-in-out .3s; transition:all ease-in-out .3s;}
+a{ text-decoration:none; outline:none; color:#222; }
+a:hover{ color:#222;}
+/*==========================Style================================*/
+.banner_text h4 a,.con_1 ul li i,.con_4 ul li,.con_4 h3 input,.footer ul li a,.con_3 ul li i{position:relative; z-index:100; behavior:url(css/tool_iecss3.htc); /*IE浏览器 圆角*/}
+.wordwrap{ word-break:break-all; word-wrap:break-word;}/*Continous English,number break */
+.omg{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap;} /*Exceed ......*/
+.m_box{ width:940px; margin:0 auto; overflow:hidden;} /*Weight*/
+/*==========================================================*/
+/*==========================================================*/
+.banner{ height:700px; background:no-repeat center top;}
+.banner_text{ padding-top:190px;}
+.banner_text h3{ text-align:center;}
+.banner_text h4{ padding-top:60px;}
+.banner_text h4 a{ display:block; width:240px; height:64px; margin:0 auto; background:#fed136; color:#fff; margin:0 auto; text-align:center; line-height:64px; font-size:18px; font-weight:bold; text-transform:uppercase; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;}
+.banner_text h4 a:hover{ background:#f60;}
+/*nav*/
+.nav{}
+.nav ul{ text-align:right; font-size:0;}
+.nav ul li{ display:inline-block; padding-left:50px; padding-top:38px; margin-right:35px;}
+.nav ul li a{ display:block; float:left; height:40px; line-height:40px; font-size:14px; text-transform:uppercase; color:#fff;}
+.nav ul li a:hover{ color:#fed136;}
+/*con*/
+.con{ overflow:hidden; clear:both;}
+.con h2{ text-align:center; overflow:hidden; padding:120px 0 62px;}
+.con h2 b{ display:block; height:50px; line-height:50px; font-size:40px; font-weight:bold; text-transform:uppercase;}
+.con h2 span{ display:block; height:30px; line-height:30px; font-size:16px; color:#777;}
+/*con_1*/
+.con_1{ padding-bottom:112px;}
+.con_1 ul{ width:993px;}
+.con_1 ul li{ width:278px; float:left; padding-right:53px;}
+.con_1 ul li i{ display:block; width:68px; height:68px; border-radius:100%; border:3px solid #fed136; background:no-repeat center scroll; margin:0 auto;}
+.con_1 ul li b{ display:block; height:36px; line-height:36px; padding-top:14px; font-size:18px; font-weight:bold; text-align:center;}
+.con_1 ul li span{ display:block; font-size:14px; line-height:22px; color:#777; text-align:center;}
+.con_1 ul li a:hover b{ color:#fed136;}
+/*con_2*/
+.con_2{ background:#f6f6f6; padding-bottom:134px;}
+.con_2 ul{ width:976px;}
+.con_2 ul li{ float:left; width:290px; height:394px; background:#fff; margin-right:35px;}
+.con_2 ul li i{ display:block; padding:32px 11px;}
+.con_2 ul li i img{ display:block; width:100%; height:auto;}
+.con_2 ul li b{ display:block; text-align:center; height:26px; line-height:26px; font-weight:bold; font-size:18px; padding:22px 11px 0;}
+.con_2 ul li em{ display:block; height:18px; line-height:18px; text-align:center; padding:0 11px; font-size:14px; color:#737373;}
+.con_2 ul li a:hover b{ color:#fed136;}
+/*con_3*/
+.con_3{ padding:0 0 62px;}
+.con_3 ul li{ width:100%; overflow:hidden; padding-bottom:92px; position:relative; min-height:182px;}
+.con_3 ul li:before{ content:""; position:absolute; height:92px; width:2px; background:#f1f1f1; left:50%; bottom:0; margin-left:-1px;}
+.con_3 ul li i{ display:block; position:absolute; width:168px; height:168px; border:7px solid #f1f1f1; border-radius:100%; overflow:hidden; left:50%; margin-left:-91px;}
+.con_3 ul li i img{ display:block; width:100%; height:auto;}
+.con_3 ul li p{ float:left; text-align:right; width:340px;}
+.con_3 ul li p b{ display:block; line-height:24px; font-weight:bold; font-size:18px;}
+.con_3 ul li p span{ display:block; line-height:22px; font-size:14px; color:#777; padding-top:10px;}
+.con_3 .m_box ul li.ys p{ float:right; text-align:left;}
+.con_3 .m_box ul li.last{ padding-bottom:0;}
+.con_3 .m_box ul li.last:before{ display:none;}
+.con_3 .m_box ul li.last a{ display:block; background:#fed136; text-align:center; color:#fff; font-size:18px; line-height:28px; font-weight:bold; padding-top:34px; height:168px; text-transform:uppercase; text-shadow:0 2px 2px #c88d02;}
+.con_3 .m_box ul li.last a:hover{ background:#f60;}
+/*con_4*/
+.con_4{ background:url(../images/con_4_bg.png) #222 no-repeat right bottom; padding-bottom:114px;}
+.con_4 ul{ width:454px; float:left;}
+.con_4 ul li{ width:100%; float:left; height:50px; line-height:50px; background:#fff; margin-bottom:28px; overflow:hidden; border-radius:4px;}
+.con_4 b{ display:block; float:left; height:50px; line-height:50px; padding:0 10px 0 20px; font-size:14px; color:#bbb;}
+.con_4 ul li input{ display:block; height:50px; font-size:14px; width:290px; color:#666;}
+.con_4 p{ width:454px; float:right; background:#fff; height:206px; border-radius:4px;}
+.con_4 p textarea{ display:block; clear:both; width:92%; margin:0 auto; height:140px; overflow:hidden; resize:none; border:none; font-size:14px; color:#666; line-height:22px;}
+.con_4 h3{ clear:both;}
+.con_4 h3 input{ display:block; width:240px; height:66px; background:#fed136; text-align:center; line-height:66px; margin:0 auto; border-radius:4px; color:#fff; font-size:18px; font-weight:bold; text-transform:uppercase; cursor:pointer;}
+.con_4 h3 input:hover{ background:#f60;}
+/*footer*/
+.footer{ overflow:hidden; height:68px; line-height:68px; background:#fff;}
+.footer b{ display:block; float:left; width:374px; font-size:14px;}
+.footer ul{ float:left; padding-top:14px;}
+.footer ul li{ float:left; padding-right:10px;}
+.footer ul li a{ display:block; width:42px; height:42px; background:#222 no-repeat center scroll; border-radius:100%;}
+.footer ul li a:hover{ background-color:#fed136;}
+
+/*
+yellow：  fed136
+*/
