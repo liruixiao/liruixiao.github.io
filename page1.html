@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <title>Introduction of structured-light sensing</title>
+</head>
+<body>
+  <div class="box">
+    <div class="public-nav">
+      <div class="public-bar">
+        <a href="#" class="item">Home</a>
+        <a href="#" class="item">Notes of research</a>
+        <a href="#" class="item">My profile</a>
+        <a href="#" class="item">Contact</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="title">
+      Structured-light sensing
+      </div>
+      <div class="subtitle">
+      Active dpth sensing through the way projected pattern bends
+      </div>
+      <div class="section-title">
+      Principle of Structured-light sensing
+      </div>
+      <div class="content">
+      Structured-light sensing technology is an active high-accuracy shor-range depth sensing technology. The system of structured-light sensing is usually composed of two parts: a projector to project a designed pattern and a camera to receive the pattern reflected by the detected target. The sensor has been installed on mobile phones to realize face identidfication, such as IPhone and Huawei Mate 20 Pro (shown in Figure below ).
+      </div>
+      <div class="image123">
+        <img src="page1_images/Fig1.png" alt="Figure is dead">
+        <img src="page1_images/Fig2.png" alt="Figure is dead">
+        <img src="page1_images/Fig3.png" alt="Figure is dead">
+      </div>
+      <div class="figuretext">
+        Figure 1. The solution of Face ID of three companies (from left to right) (a)Huawei (b) Xiaomi (c) Apple
+      </div>
+      <div class="content">
+      &nbsp &nbsp Fig. 1 shows the case of structured-light sensor adopted by Huawei, Xiaomi and Apple respectively. It is obvious that there are still
+      many other elements but the key elements are dot projector and infrared camera. Even though they applied dot pattern to realize
+      3D sening, patterns with other shape could also be used to obtain the same result. In the following introducation, line pattern will
+      be taken for an example to explain the principle of structured-light sening, which could also be seen as a group of dots.
+      </div>
+      <div class="image45">
+      <img src="page1_images/Fig4.png" alt="Figure is dead">
+      <img src="page1_images/Fig5.png" alt="Figure is dead">
+      </div>
+      <div class="figuretext">
+      Figure 2. The shemtic of structured light sening (from left to right) (a)system (b) geometry
+      </div>
+      <div class="content">
+      &nbsp &nbsp As we seen from the above figure, if a line-shaped pattern is projected to a spherical surface, the pattern received by camera will
+bend on account of the surface. It is  easily imaged that the surfaces with different shape lead to different distortion of  line pattern.
+The reason why the line bend is that the patterns reflected by objects  placed at different distance away from camera are received at
+different position of CMOS/CCD as illustrated in the right figure in Fig. 2. That is to say, if the surface of object is absolutely flat, we
+could not see such kind of bending. Thus, through triangle calulation shown in Fig. 2.(b), the depth information could be obtained
+through the following equation:
+      </div>
+      <div class="equation1">
+        <img src="page1_images/equation1.png" alt="Figure is dead">
+      </div>
+      <div class="section-title">
+      Elements in structured-light sensor
+      </div>
+      <div class="content">
+        &nbsp &nbsp After introduction of principle of structured-light sensing, I have to give a breif introduction of the elements used in structured-light
+sening (shown in Fig. 3.). Firstly, let’s have a look at projector. The pattern projected by projector is actually light beam, which is always
+realized by laser with optics thanks to its small size, small powerconsumption, and high integratablity. Among the current lasers , such
+as DFB lasers, laser diode, laser-emitting diode, vertical-cavity surface-emitting laser is most widely used in indusrty because of its low
+threshold current, low cost, extrmely high integratability. For IPhone, Apple has its own solution including algorithm and hardware
+design, where the VCSEL is supplied by lumentum, and DOE (optics cooperated with VCSEL to generate designed dot pattern) is supplid
+by tsmc and Himax. However, for most Chinese company such as Xiaomi and oppo, they don’t have their own solution, which means
+they must adopt the solution designed by Qualcomm/Himax. Differed from Apple, Qualcomm/Himax uses edge-emmitting laser as the
+light source of projector, because the 6-inch incision based VCSEL technology is controlled by Apple and its supplier lumentum. However
+in the future, when most companies could get command of such technology of volume production to meet the requirment of market,
+the VCSEL should be still the preferred light source for structured-light projector. It is said that Huawei’ s structured-light sensor is
+designed by itself, but the supplier of VCSEL and optics have to be purchased from overseas companies. There are also some Chinese
+companies such as Bright intelligent and Accelink engaged in desiging and producing VCSELs, but there is stll far from being used in
+practical.
+      </div>
+      <div class="image6">
+        <img src="page1_images/Fig6.png" alt="Figure is dead">
+      </div>
+      <div class="figuretext">
+      Figure 3. The elements used in Face ID system
+      </div>
+      <div class="content">
+        &nbsp &nbsp Besides, camera is also essential for detection. To increase the resolution and accuracy, it have to adopt high-sensitivity milimeter
+-scale CMOS sensor with large numbers of pixels and equipped with a micro lens. For IPhoneX, a NIR camera sensor based on an
+Imager-SOI substrate provided by STMicroelectronics was adopted. It could provide a small pixel size with 4um (High resolution).
+The proximity sensor (may be a ToF sensor) composed of single-photon avalanche diode (SPAD) technology and a VCSEL illuminator
+(Flooded illuminator) was also supplied by the same company. It could be seen from Fig. 1.(c). that there are some other elements
+like ambient light sensor, the function of which is not clear explained by researchers, but I think it might be used to suppress the
+effect of backgroud light.
+     </div>
+     </div>
+    <div class="comment">
+      <div class="comment-title">
+        Comment
+      </div>
+      <div class="input-area">
+        <div class="frame1">
+          <input type="text" placeholder="Your name *">
+        </div>
+        <div class="frame2">
+          <input type="text" placeholder="Your comment *">
+        </div>
+        <div class="frame3">
+          <input type="submit"  value="Ok">
+        </div>
+      </div>
+      <div class="display-area">
+      </div>
+    </div>
+    <div class="footer">
+      <b>© Copyright 2019 Li Ruixiao</b>
+      <div class="icon">
+        <div class="area">
+          <a href="#" >
+            <img src="page1_images/footer_ico_1.png">
+          </a>
+       </div>
+       <div class="area">
+         <a href="#" >
+           <img src="page1_images/footer_ico_2.png">
+         </a>
+       </div>
+       <div class="area">
+         <a href="#" >
+           <img src="page1_images/footer_ico_3.png">
+         </a>
+       </div>
+       <div class="area">
+         <a href="#" >
+           <img src="page1_images/footer_ico_4.png">
+         </a>
+       </div>
+     </div>
+   </div>
+ </div>
+</body>
+</html>
