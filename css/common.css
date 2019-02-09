@@ -124,7 +124,7 @@ img,input {
 .comment {
   margin-top: 216px;
   height: 850px;
-  background: url(C:/Users/koya2018-1/Desktop/page1/page1_images/comment_back.png);
+  background: url(../page1_images/comment_back.png);
 }
 .comment .comment-title {
   padding-top: 40px;
