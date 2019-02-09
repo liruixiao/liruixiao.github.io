@@ -1,60 +1,12 @@
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background: rgba(0,0,0,0.0);
-}
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-　　color: #000;
-　　}
-input:-moz-placeholder, textarea:-moz-placeholder {
-　　color:#000;
-　　}
-input::-moz-placeholder, textarea::-moz-placeholder {
-　　color:#000;
-　　}
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-　　color:#000;
-　　}
-body {
-   min-width: 960px;
-}
-a {
-  font-family: "Montserrat";
-  color: #ffffff;
-  text-decoration: none;
-}
-.box {
-  margin: 0 auto;
-  width: 1400px;
-}
-a:hover {
-  color: #fed136;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
-}
-img,input {
-  border: none;
-}
-.public-nav {
-  height: 695px;
-  background: url(../page1_images/bar_back.jpg) no-repeat center top;
-}
-.public-nav .public-bar {
-  position:relative;
-  margin:0 auto;
-  weight: 940px;
-  height: 108px;
-  line-height: 108px;
-  padding-right: 200px;
-}
-.public-nav .public-bar a {
-  float: right;
-  margin:0px 17px;
+.container:before,
+.container:after,
+.clearf:before,
+.clearf:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 .main {
-  margin: 0 auto;
-  width: 1178px;
   font-family: "Montserrat";
 }
 .main .title {
@@ -81,16 +33,22 @@ img,input {
 }
 .main .content {
   line-height: 26px;
+  font-size: 16px;
 }
 .main .image123 {
   margin-top:20px;
   margin-bottom: 10px;
-  margin-left: 14px;
-  margin-right: 14px;
-  padding:0px 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding:0px 0px;
+  height: 154px;
 }
 .main .image123 img {
-  margin:0 10px;
+  margin:0 6px;
+	height: auto;
+  width: auto;
+	max-width: 100%;
+	max-height: 100%;
 }
 .main .figuretext {
   margin-bottom: 20px;
@@ -101,28 +59,34 @@ img,input {
   color: #777777;
 }
 .main .image45 {
+  display: block;
   margin-top:20px;
   margin-bottom: 10px;
   margin-left: 14px;
   margin-right: 14px;
-  padding:0px 20px;
+  height: 260px;
+  padding:0px 00px;
 }
 .main .image45 img {
-  margin:0 20px;
+  margin:0 5px;
+  height: auto;
+  width: auto;
+	max-width: 100%;
+	max-height: 100%;
 }
 .main .equation1 {
   margin-top:20px;
-  padding:0px 540px;
+  padding:0px 420px;
 }
 .main .image6 {
   margin-top:20px;
   margin-bottom: 10px;
   margin-left: 14px;
   margin-right: 14px;
-  padding:0px 150px;
+  padding:0px 40px;
 }
 .comment {
-  margin-top: 216px;
+  margin-top: 120px;
   height: 850px;
   background: url(../page1_images/comment_back.png);
 }
@@ -165,13 +129,13 @@ img,input {
 .comment .input-area .frame1 input {
   background: #ffffff;
   border-radius:4px;
-  width:285px;
+  width:200px;
   height: 52px;
 }
 .comment .input-area .frame2 input {
   background: #ffffff;
   border-radius:4px;
-  width:910px;
+  width:525px;
   height: 52px;
 }
 .comment .input-area .frame3 input {
@@ -185,44 +149,9 @@ img,input {
 }
 .comment .display-area {
   margin: 0 auto;
-  width: 1310px;
+  width: 840px;
   height: 640px;
   margin-top: 20px;
   background: #fff;
   border-radius: 4px;
-}
-.footer {
-  height: 50px;
-  line-height: 50px;
-  overflow: hidden;
-  margin: 0 auto;
-  weight: 940px;
-}
-
-.footer b {
-  float: left;
-  font-family: "Montserrat";
-  weight:374px;
-  font-size: 14px;
-}
-.footer .icon {
-  float: left;
-  height: 50px;
-  padding-top: 5px;
-  padding-left: 28%;
-}
-.footer .icon .area {
-  float: left;
-  padding-right: 10px;
-}
-.footer .icon .area a{
-  display:block;
-  background:#222 no-repeat center scroll;
-  border-radius:100%;
-  width:42px;
-  height:42px;
-  padding-left: 12px;
-}
-.footer .icon .area a:hover {
-  background-color:#fed136;
 }
