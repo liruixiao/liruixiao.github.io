@@ -18,7 +18,7 @@ function TOJMail($From,$FromName,$FromUser,$FromPass,$TOMail,$TOTitle,$TOContent
   $FromName = "liruixiao";            //发件人姓名
   $FromUser = "liruixiao94";        //发件人用户名
   $FromPass = "ligou2007";        //发件人密码
-  $TOMail = "liruixiao94@outlook.com";        //收件人地址
+  $TOMail = "li.r.ae@m.titech.ac.jp";        //收件人地址
   $TOTitle = "Mail from my page";        //邮件标题
   $TOContent = "Mail from my page";    //邮件内容
   $SmtpServer = "imap-mail.outlook.com";            //邮件服务器
