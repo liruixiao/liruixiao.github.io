@@ -5,29 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/page2.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
   <div class="navbar navbar-default">
-    <div class="container">
+    <div class="container" style="background-image: url(home_images/banner_bg.jpg); background-size: cover; height:190px;" >
       <div class="navbar-header">
         <a href="index.html" class="navbar-brand"></a>
       </div>
       <label id="toggle-label" class="visible-xs-inline-block" for="toggle-checkbox">MENU</label>
       <input class="hidden" id="toggle-checkbox" type="checkbox">
-      <div class="hidden-xs">
+      <div class="hidden-xs" ">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Notes of research</a></li>
-          <li><a href="#">My profile</a></li>
-          <li><a href="#">Message Board</a></li>
+          <li><a href="index.html" style="background-color:#000000; color:#ffffff;">Home</a></li>
+		  <li class="active"><a href="page2.html" style="color:#ffffff;">Notes of research</a></li>
+          <li><a href="#" style="background-color:#000000; color:#ffffff;">My profile</a></li>
+          <li><a href="#" style="background-color:#000000; color:#ffffff;">Message Board</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
+  <div class="container" >
+    <div class="row" style="margin-top:20px;">
 	<div class="col-sm-3">
         <div class="search-bar">
           <input type="search" class="form-control" placeholder="Search">
@@ -45,10 +47,10 @@
       <div class="col-sm-7">
         <div class="news-list">
           <div class="news-list-item clearfix">
-              <a href="news.html" class="title">Introduction of structured-lighter sensor</a>
+              <a href="page1.html" class="title">Introduction of structured-lighter sensor</a>
               <div class="info">
-                <span><span class="avatar"></span>Li Ruixiao</span> ⋅
-                <span>10 view</span> ⋅
+                <span><span class="avatar"></span>Li Ruixiao</span> 
+                <span>10 view</span> 
                 <span>2019/2/22</span>
               </div>
           </div>

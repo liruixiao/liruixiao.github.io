@@ -6,22 +6,30 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Introduction of structured-light sensing</title>
 <link rel="stylesheet" type="text/css" href="css/home.css">
-<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/page1.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
 <!--banner-->
-<div class="m_box">
-  <div id="bg" class="image-100">
-    <div class='nav_bar'>
-	  <a herf="#">HOME</a>
-	  <a herf="#">NOTES</a>
-	  <a herf="#">PROFILE</a>
-	  <a herf="#">CONTACT</a>
-	</div>
+<div class="navbar navbar-default">
+    <div class="container" style="background-image: url(page1_images/bar_back.jpg); background-size: cover; height:190px;" >
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand"></a>
+      </div>
+      <label id="toggle-label" class="visible-xs-inline-block" for="toggle-checkbox">MENU</label>
+      <input class="hidden" id="toggle-checkbox" type="checkbox">
+      <div class="hidden-xs" ">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html" style="background-color:#000000; color:#ffffff;">Home</a></li>
+		  <li class="active"><a href="page2.html" style="color:#ffffff;">Notes of research</a></li>
+          <li><a href="#" style="background-color:#000000; color:#ffffff;">My profile</a></li>
+          <li><a href="#" style="background-color:#000000; color:#ffffff;">Message Board</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
 <!--con_1-->
 <div class="main con">
   <div class="m_box">
@@ -143,7 +151,7 @@ effect of backgroud light.
         </form>
 </div>
 <!--footer-->
-<div class="footer">
+<div class="footer" style="color:#ffffff;">
     © 2019 Copyright by Li Ruixiao
   </div>
 </body>
