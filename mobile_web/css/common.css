@@ -1,0 +1,229 @@
+.container:before,
+.container:after,
+.clearf:before,
+.clearf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+h2{
+	text-align:center;
+}
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+p {
+  font-size:1rem;
+  font-family: "Montserrat";
+}
+.nav_bar {
+	padding-top:50px;
+	padding-left: 50%
+}
+.nav_bar a{
+	color: #ffffff;
+	font-size:1.2rem;
+	font-style:bold;
+	font-family:"Montserrat";
+	margin-right: 5%;
+}
+.main {
+  font-family: "Montserrat";
+}
+.main .title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.main .subtitle {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Droid Serif";
+  font-style: italic;
+  color: #777777;
+}
+
+.over-flow {
+	overflow: auto;
+}
+
+.main .section-title {
+  display:block;
+  clear:both;
+  font-size: 1.25rem;
+  text-align:left;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+.main .content {
+  line-height: 26px;
+  font-size: 1rem;
+}
+.main .image-area {
+  display: block;
+  width: 100%;
+  margin-top:0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main .image-33 {
+    float: left;
+    width: 30%;
+    margin: 10px 1.2%;
+    height: 0;
+    padding-bottom: 20%; 
+	
+}
+.main .image-45 {
+  float: left;
+  width: 45%;
+  margin: 10px 2%;
+  height: 0;
+  padding-bottom: 27%;
+  background-size: contain;
+}
+.main .image-90 {
+  width: 90%;
+  margin: 0 auto;
+  height: 0;
+  background-size: cover;
+}
+.main .image-100 {
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+  background-size: cover;
+}
+#bg {
+	background: url("../page1_images/bar_back.jpg") no-repeat center top;
+	background-size: 100%;
+	padding-bottom: 49.635%;
+}
+#fig0 {
+	background: url("../page1_images/Fig0.png") no-repeat center center;
+	background-size: 100%;
+	padding-bottom: 18.84%;
+    margin-right:7.5%;
+}
+
+#fig1 {
+	background: url("../page1_images/Fig1.png") no-repeat center center;
+	background-size: 100%;
+}
+#fig2 {
+	background: url("../page1_images/Fig2.png") no-repeat center center;
+	background-size: 100%;
+}
+#fig3 {
+	background: url("../page1_images/Fig3.png") no-repeat center center;
+	background-size: 100%;
+}
+#fig4 {
+	background: url("../page1_images/Fig4.png") no-repeat center center;
+	background-size: 100%;
+}
+#fig5 {
+	background: url("../page1_images/Fig5.png") no-repeat center center;
+	background-size: 100%;
+}
+#fig6 {
+	background: url("../page1_images/Fig6.png") no-repeat center center;
+	background-size: 100%;
+	padding-bottom: 30%;
+}
+
+.main .figuretext {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Droid Serif";
+  font-style: italic;
+  color: #777777;
+}
+
+
+	
+.main .equation1 {
+  margin-top:20px;
+  padding:0px 420px;
+}
+.main .image6  {
+  margin-top:20px;
+  margin-bottom: 10px;
+  margin-left: 14px;
+  margin-right: 14px;
+  padding:0px 40px;
+  
+}
+.comment {
+  margin-top: 120px;
+  height: 850px;
+  background: url(../page1_images/comment_back.png);
+}
+
+.comment .comment-title {
+  padding-top: 40px;
+  padding-left: 2%;
+  font-family: "Montserrat";
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+}
+.comment .input-area {
+  margin: 0 auto;
+  width:100%;
+  border-radius: 4px;
+}
+.comment .input-area .frame1 {
+  padding-left: 0;
+  overflow: hidden;
+  margin-bottom:10px;
+}
+.comment .input-area .frame2 {
+  margin-left: 0;
+  margin-bottom:10px;
+  overflow: hidden;
+}
+.comment .input-area .frame3 {
+  margin-left: 20px;
+  overflow: hidden;
+}
+.comment .input-area .frame1 input {
+  background: #ffffff;
+  border-radius:4px;
+  width:100%;
+  height: 52px;
+}
+.comment .input-area .frame2 input {
+  background: #ffffff;
+  border-radius:4px;
+  width:100%;
+  height: 52px;
+}
+.comment .input-area .frame3 input {
+  display:block; width:72px; height:52px; background:#fed136; text-align:center; line-height:52px; margin:0 auto; border-radius:4px; color: #fff; font-family: "Montserrat"; font-size:18px; font-weight:bold; text-transform:uppercase; cursor:pointer;
+}
+.comment .input-area .frame3 input:hover {
+  background:#f60;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+.comment .display-area {
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
