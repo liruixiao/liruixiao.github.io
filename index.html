@@ -3,10 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>My page</title>
-<script type=”text/javascript”>
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-window.location = “google.com”; //可以换成http地址
-}
+<script>
+    var is_mobi = navigator.userAgent.toLowerCase().match(/(ipod|iphone|android|coolpad|mmp|smartphone|midp|wap|xoom|symbian|j2me|blackberry|wince)/i) != null;
+        if (is_mobi) {
+            window.location.href = "https://google.com";
+        }else{
+            // window.location.href="index.html" 
+        }
 </script>
 <link rel="stylesheet" type="text/css" href="css/home.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
