@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>My page</title>
+<script type=”text/javascript”>
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+window.location = “google.com”; //可以换成http地址
+}
+</script>
 <link rel="stylesheet" type="text/css" href="css/home.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
