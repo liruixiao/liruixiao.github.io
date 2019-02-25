@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Introduction of structured-light sensing</title>
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+
+<body>
+<!--banner-->
+<div class="m_box">
+  <div id="bg" class="image-100">
+    <div class='nav_bar'>
+	  <a herf="#">HOME</a>
+	  <a herf="#">NOTES</a>
+	  <a herf="#">PROFILE</a>
+	  <a herf="#">CONTACT</a>
+	</div>
+  </div>
+</div>
+<!--con_1-->
+<div class="main con">
+  <div class="m_box">
+    <div class="title">
+    Structured-light sensing
+    </div>
+    <div class="subtitle">
+    Active depth sensing through the way projected pattern bends
+    </div>
+    <div class="section-title">
+    Principle of Structured-light sensing
+    </div>
+    <div class="content">
+      Face identification is not a recent technology. Many year ago, some mobile pay companies and train station adopted such technology to realize individual identification. The identification system matches your current photo to the photo that you set before. As we know, the ordinary camera could only capture 2D image, which means we could not get depth information from such kind of photos. Therefore, if today I make up heavily, the system may not be able to identify me. To solve the problem, people created a method for machines to obtain 3D information through binocular vision, which uses two or more photos captured from different view to establish 3D model of target. However, these photos are greatly influenced by environment, such as dark room and shadows, so the accuracy or resolution will be affected. Then active sensing technology was created, such as time of light, frequency modulated continuous wave and structured-light, the common points of which is being equipped with an active element to emit miliwaves, microwaves or light. It turns out better adaption to different environment and better controllability. The comparision of these 3D sensing technologies is demonstrated below:<br>
+    </div>
+	<div class="image-area over-flow">
+	  <div id="fig0" class="image-90">
+	  </div>
+	</div>
+	 <div class="content">
+      <p>&nbsp &nbsp Structured-light sensing technology is an active high-accuracy short-range depth sensing technology. The system of structured-light sensing is usually composed of two parts: a projector to project a designed pattern and a camera to receive the pattern reflected by the detected target. The sensor has been installed on mobile phones to realize face identidfication, such as IPhone and Huawei Mate 20 Pro (shown in Figure below ).</p>
+    </div>
+    <div class="image-area over-flow">
+	  <div id="fig1" class="image-33">
+        
+	  </div>
+	  <div id="fig2" class="image-33">
+        
+	  </div>
+	  <div id="fig3" class="image-33">
+    
+	  </div>
+    </div>
+    <div class="figuretext">
+      Figure 1. The solution of Face ID of three companies (from left to right) (a)Huawei (b) Xiaomi (c) Apple
+    </div>
+    <div class="content">
+    &nbsp &nbsp Fig. 1 shows the case of structured-light sensor adopted by Huawei, Xiaomi and Apple respectively. It is obvious that there are still
+    many other elements but the key elements are dot projector and infrared camera. Even though they applied dot pattern to realize
+    3D sensing, patterns with other shape could also be used to obtain the same result. In the following introducation, line pattern will
+    be taken for an example to explain the principle of structured-light sening, which could also be seen as a group of dots.
+    </div>
+    <div class="image-area over-flow">
+	  <div id="fig4" class="image-45">
+        
+	  </div>
+	  <div id="fig5" class="image-45">
+        
+	  </div>
+    </div>
+    <div class="figuretext">
+    Figure 2. The shemtic of structured light sening (from left to right) (a)system (b) geometry
+    </div>
+    <div class="content">
+    &nbsp &nbsp As we seen from the above figure, if a line-shaped pattern is projected to a spherical surface, the pattern received by camera will
+bend on account of the surface. It is  easily imaged that the surfaces with different shape lead to different distortion of  line pattern.
+The reason why the line bend is that the patterns reflected by objects  placed at different distance away from camera are received at
+different position of CMOS/CCD as illustrated in the right figure in Fig. 2. That is to say, if the surface of object is absolutely flat, we
+could not see such kind of bending. Thus, through the position of received pattern at CMOS/CCD sensor,as shown in Fig. 2.(b), the depth information could be obtained
+through the following equation:
+    </div>
+    <img src="page1_images/equation1.png" style="padding-left: 35%;">
+    <div class="section-title">
+    Elements in structured-light sensor
+    </div>
+    <div class="content">
+      &nbsp &nbsp After introduction of principle of structured-light sensing, I have to give a breif introduction of the elements used in structured-light
+sening (shown in Fig. 3.). Firstly, let’s have a look at projector. The pattern projected by projector is actually light beam, which is always
+realized by laser with optics thanks to its small size, small powerconsumption, and high integratablity. Among the current lasers , such
+as DFB lasers, laser diode, laser-emitting diode, vertical-cavity surface-emitting laser is most widely used in indusrty because of its low
+threshold current, low cost, extrmely high integratability. For IPhone, Apple has its own solution including algorithm and hardware
+design, where the VCSEL is supplied by lumentum, and DOE (optics cooperated with VCSEL to generate designed dot pattern) is supplid
+by tsmc and Himax. However, for most Chinese company such as Xiaomi and oppo, they don’t have their own solution, which means
+they must adopt the solution designed by Qualcomm/Himax. Differed from Apple, Qualcomm/Himax uses edge-emmitting laser as the
+light source of projector, because the 6-inch incision based VCSEL technology is controlled by Apple and its supplier lumentum. However
+in the future, when most companies could get command of such technology of volume production to meet the requirment of market,
+the VCSEL should be still the preferred light source for structured-light projector. It is said that Huawei’ s structured-light sensor is
+designed by itself, but the supplier of VCSEL and optics have to be purchased from overseas companies. There are also some Chinese
+companies such as Bright intelligent and Accelink engaged in desiging and producing VCSELs, but there is stll far from being used in
+practical.
+    </div>
+    <div class="image-area over-flow">
+	  <div id="fig6" class="image-90">
+	  </div>
+	</div>
+    <div class="figuretext">
+    Figure 3. The elements used in Face ID system
+    </div>
+    <div class="content">
+      &nbsp &nbsp Besides, camera is also essential for detection. To increase the resolution and accuracy, it have to adopt high-sensitivity milimeter
+-scale CMOS sensor with large numbers of pixels and equipped with a micro lens. For IPhoneX, a NIR camera sensor based on an
+Imager-SOI substrate provided by STMicroelectronics was adopted. It could provide a small pixel size with 4um (High resolution).
+The proximity sensor (may be a ToF sensor) composed of single-photon avalanche diode (SPAD) and a VCSEL illuminator
+(Flooded illuminator) that was also supplied by the same company to roughly detect how close your face is to the camera, because as we know camera has its shortest imaging distance and certain imaging fieids. It could be seen from Fig. 1.(c). that there are some other elements
+like ambient light sensor, the function of which is not clearly explained by researchers, but I think it might be used to suppress the
+effect of backgroud light.
+    </div>
+  </div>
+</div>
+<!--comment-->
+<div class="comment">
+  <div class="m_box">
+    <form method="POST" action="send.php">
+          <div class="comment-title">Comment</div>
+          <div class="input-area">
+            <div class="frame1">
+              <input type="text" name="name" placeholder="Your name *">
+            </div>
+            <div class="frame2">
+              <input type="text" name="content" placeholder="Your comment *">
+            </div>
+            <div class="frame3">
+              <input type="submit" name="B1" value="Ok">
+            </div>
+          </div>
+          <div class="display-area">
+           
+          </div>
+        </form>
+</div>
+<!--footer-->
+<div class="footer">
+    © 2019 Copyright by Li Ruixiao
+  </div>
+</body>
+</html>

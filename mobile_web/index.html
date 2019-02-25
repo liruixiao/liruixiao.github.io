@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>My page</title>
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<!--banner-->
+<div class="navbar navbar-default">
+    <div class="container" style="background-image: url(home_images/banner_bg.jpg); background-size: cover; height:190px;" >
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand"></a>
+      </div>
+      <label id="toggle-label" class="visible-xs-inline-block" for="toggle-checkbox">MENU</label>
+      <input class="hidden" id="toggle-checkbox" type="checkbox">
+      <div class="hidden-xs">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="page2.html">Notes of research</a></li>
+          <li><a href="#">My profile</a></li>
+          <li><a href="#">Message Board</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--con_1-->
+<div class="container">
+    <div class="news-list">
+	<h2><b>Engaged Field</b></h2>
+	    <div class="news-list-item clearfix">
+		    <div  class="col-xs-3" style="height:40px; background: url(home_images/con_1_ico_1.png) no-repeat center center; ">
+            </div>
+            <div class="col-xs-9" style="padding-top:8px">
+              <a href="page1.html" class="title">Structured-light sensing</a>
+            </div>
+          </div>
+		  <div class="info">
+                <span><span class="avatar"></span>It is a kind of high-accuracy 3D active sensing solution in short range, which could be applied in Face ID, 3D printing, defect detection and so on.</span>
+          </div>
+		  <div class="news-list-item clearfix">
+		    <div  class="col-xs-3" style="height:40px; background: url(home_images/con_1_ico_2.png) no-repeat center center; ">
+            </div>
+            <div class="col-xs-9" style="padding-top:8px">
+              <a href="news.html" class="title">VCSEL Beam Scanner</a>
+            </div>
+          </div>
+		  <div class="info">
+                <span><span class="avatar"></span>It is designed as non-mechenical milimeter-size Watt-scale scanning laser source for 3D active sensing.</span>
+          </div>
+		  <div class="news-list-item clearfix">
+		    <div  class="col-xs-3" style="height:40px; background: url(home_images/con_1_ico_3.png) no-repeat center center; ">
+            </div>
+            <div class="col-xs-9" style="padding-top:8px">
+              <a href="news.html" class="title">Tunable Laser</a>
+            </div>
+          </div>
+		  <div class="info">
+                <span><span class="avatar"></span>It is a kind of wavelength-tunable laser that could be integrated with beam scanner.</span>
+          </div>
+    </div>
+ </div>
+<!--con con_2-->
+<div class="container">
+    <div class="news-list">
+	<h2><b>My Research</b></h2>
+	    <div class="news-list-item clearfix" style="border-style: none;">
+		    <div  class="col-xs-3" style="height:40px; background: url(home_images/con_2_pic_1.jpg) no-repeat center center; background-size: contain; ">
+            </div>
+            <div class="col-xs-9" style="padding-top:0px">
+              <a href="news.html" class="title">Laser-safety standard</a>
+			  <div class="info">
+                <span><span class="avatar"></span>Eye-safe power</span>
+              </div>
+            </div>
+          </div>
+		  <div class="news-list-item clearfix" style="border-style: none;">
+		    <div  class="col-xs-3" style="height:40px; background: url(home_images/con_2_pic_2.jpg) no-repeat center center;background-size: contain; ">
+            </div>
+            <div class="col-xs-9" style="padding-top:0px">
+              <a href="news.html" class="title">Depth Sensing</a>
+			  <div class="info">
+                <span><span class="avatar"></span>System, algorithm</span>
+          </div>
+            </div>
+          </div>  
+		  <div class="news-list-item clearfix" style="border-style: none;">
+		    <div  class="col-xs-3" style="height:40px; background: url(home_images/con_2_pic_3.jpg) no-repeat center center;background-size: contain; ">
+            </div>
+            <div class="col-xs-9" style="padding-top:0px">
+              <a href="news.html" class="title">Accuracy Analysis</a>
+			  <div class="info">
+                <span><span class="avatar"></span>Scan VS Flash, Structured-light VS TOF</span>
+              </div>
+            </div>
+          </div>
+    </div>
+ </div>
+<!--con con_3-->
+<!--con_4-->
+<div class="comment">
+  <div class="m_box">
+    <form method="POST" action="send.php">
+          <div class="comment-title">Comment</div>
+          <div class="input-area">
+            <div class="frame1">
+              <input type="text" name="subject" placeholder="Subject *">
+            </div>
+			<div class="frame1">
+              <input type="text" name="name" placeholder="Your name *">
+            </div>
+			<div class="frame1">
+              <input type="text" name="company" placeholder="Your company *">
+            </div>
+			<div class="frame1">
+              <input type="text" name="email" placeholder="Your email *">
+            </div>
+            <div class="frame2">
+              <input type="text" name="content" placeholder="Your comment *">
+            </div>
+            <div class="frame3">
+              <input type="submit" name="B1" value="Ok">
+            </div>
+          </div>
+          <div class="display-area">
+           
+          </div>
+        </form>
+  </div>
+</div>
+<!--footer-->
+<div class="footer">
+    © 2019 Copyright by Li Ruixiao
+ </div>
+</body>
+</html>
